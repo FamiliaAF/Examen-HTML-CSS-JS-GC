@@ -19,15 +19,19 @@ body {
   border-radius: 0.5em;
   box-shadow: 0 0.5em 0.5em rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 700px;
-  display: flex;
-  flex-direction: column;
+  max-width: 800px;
+  /* display: flex;
+  flex-direction: column; */
+  margin: 1em;
 }
 
 fieldset {
   border: 2px solid #ddd;
   border-radius: 0.5em;
   padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1em;
 }
 
 legend {
@@ -35,10 +39,6 @@ legend {
   color: navy;
   padding: 0 0.5em;
   font-weight: bold;
-}
-
-.form-row {
-  margin-bottom: 0.5em;
 }
 
 label {
@@ -82,11 +82,11 @@ input::placeholder {
 .submit-btn:hover {
   background-color: #3a4bff;
 }
-
+/* 
 @media (min-width: 768px) {
   .form-row {
     display: flex;
     justify-content: space-between;
     gap: 1em;
   }
-}
+} */
