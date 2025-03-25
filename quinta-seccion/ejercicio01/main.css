@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+h1 {
+ text-align: center;
+ margin-top: 0.5em;
+ color: #333;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 1em;
+  padding: 1em;
+}
+
+dialog {
+  border: none;
+}
